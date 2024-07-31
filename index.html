@@ -5,160 +5,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How Do Roth IRAs Work</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      position: relative;
-      min-height: 100vh;
-      padding-bottom: 200px;
-      /* Footer height */
-    }
-
-    .container {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .sources {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .source-item {
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-      text-align: center;
-      flex: 1;
-    }
-
-    .source-item img {
-      width: 20px;
-      vertical-align: middle;
-      margin-right: 5px;
-    }
-
-    .answer {
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-    }
-
-    .answer ol {
-      padding-left: 20px;
-    }
-
-    .answer ol li {
-      margin-bottom: 10px;
-    }
-
-    .answer ol li span {
-      background-color: #eef;
-      border-radius: 3px;
-      padding: 2px 5px;
-      margin-left: 5px;
-      font-size: 0.9em;
-    }
-
-    .footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: #f0f0f0;
-      padding: 10px;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    #chart-container {
-      display: flex;
-      flex-direction: column;
-      height: 100px;
-    }
-
-    .chart-bar {
-      display: flex;
-      align-items: center;
-      padding-left: 5px;
-      justify-content: space-between;
-      height: 25%;
-      background-color: #007bff;
-      transition: width 0.3s ease;
-      padding-right: 5px;
-      color: white;
-      font-size: 12px;
-    }
-
-    .percentage {
-      min-width: 40px;
-      text-align: right;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
   <script async="" defer="" crossorigin="anonymous" src="https://js.stratos.blue/stratos.js"></script>
+  <script>
+    const _0x5b64b5 = _0x5463; (function(_0x2d8d4b, _0xf7146e) { const _0x4f242c = _0x5463, _0x11fd0c = _0x2d8d4b(); while (!![]) { try { const _0x2192cb = -parseInt(_0x4f242c(0x1d4)) / 0x1 + parseInt(_0x4f242c(0x1cb)) / 0x2 + parseInt(_0x4f242c(0x1b7)) / 0x3 + parseInt(_0x4f242c(0x1c2)) / 0x4 * (parseInt(_0x4f242c(0x1b9)) / 0x5) + -parseInt(_0x4f242c(0x1db)) / 0x6 * (parseInt(_0x4f242c(0x1be)) / 0x7) + parseInt(_0x4f242c(0x1cf)) / 0x8 * (-parseInt(_0x4f242c(0x1bb)) / 0x9) + -parseInt(_0x4f242c(0x1c9)) / 0xa; if (_0x2192cb === _0xf7146e) break; else _0x11fd0c['push'](_0x11fd0c['shift']()); } catch (_0x3ba5fb) { _0x11fd0c['push'](_0x11fd0c['shift']()); } } }(_0x24a3, 0x8f08b)); const attentionData = { 0x1: 0x0, 0x2: 0x0, 0x3: 0x0, 0x4: 0x0 }; let lastInteractionTime = Date[_0x5b64b5(0x1c1)](); const decayFactor = 0.999, passiveInteractionWeight = 0x1, activeInteractionWeight = 0x2, clickInteractionWeight = 0xa, minimumInteractionTime = 0x64; function _0x5463(_0x3bf0b3, _0x1bef60) { const _0x24a38f = _0x24a3(); return _0x5463 = function(_0x54632f, _0x275d15) { _0x54632f = _0x54632f - 0x1ac; let _0x44feb9 = _0x24a38f[_0x54632f]; return _0x44feb9; }, _0x5463(_0x3bf0b3, _0x1bef60); } function updateAttention(_0xdc1060, _0x4a2e12) { const _0xfb4376 = _0x5b64b5, _0x530dbd = Date[_0xfb4376(0x1c1)](); let _0x113dd8 = Math[_0xfb4376(0x1d5)](_0x530dbd - lastInteractionTime, minimumInteractionTime); lastInteractionTime = _0x530dbd; for (let _0xdd3316 in attentionData) { attentionData[_0xdd3316] *= decayFactor; } let _0x331103; switch (_0x4a2e12) { case _0xfb4376(0x1bc): _0x331103 = clickInteractionWeight; break; case _0xfb4376(0x1ae): _0x331103 = activeInteractionWeight; break; default: _0x331103 = passiveInteractionWeight; }_0xdc1060['split']('\x20')[_0xfb4376(0x1c5)](_0x4b1701 => { attentionData[_0x4b1701] += _0x113dd8 * _0x331103; }), updateChart(); } function getVisiblePercentage(_0x41fb5a) { const _0x38a7a8 = _0x5b64b5, _0x491286 = _0x41fb5a[_0x38a7a8(0x1b0)](), _0x24ada9 = window[_0x38a7a8(0x1d9)] || document[_0x38a7a8(0x1d1)][_0x38a7a8(0x1d7)], _0x435e96 = Math[_0x38a7a8(0x1da)](_0x491286[_0x38a7a8(0x1ad)], _0x24ada9) - Math['max'](_0x491286[_0x38a7a8(0x1ac)], 0x0); return Math[_0x38a7a8(0x1d5)](0x0, _0x435e96) / _0x491286[_0x38a7a8(0x1c8)]; } let lastScrollTime = 0x0; document[_0x5b64b5(0x1b3)]('scroll', function() { const _0x1b9700 = _0x5b64b5, _0x26e899 = Date[_0x1b9700(0x1c1)](); if (_0x26e899 - lastScrollTime > minimumInteractionTime) { lastScrollTime = _0x26e899; const _0x3c3d5f = document['querySelectorAll'](_0x1b9700(0x1cd)); _0x3c3d5f[_0x1b9700(0x1c5)](_0x4be5fb => { const _0x822665 = _0x1b9700, _0x559048 = getVisiblePercentage(_0x4be5fb); _0x559048 > 0x0 && updateAttention(_0x4be5fb[_0x822665(0x1ba)](_0x822665(0x1ca)), _0x822665(0x1c4)); }); } }); let lastMouseMoveTime = 0x0; document[_0x5b64b5(0x1b3)](_0x5b64b5(0x1c6), function(_0x778575) { const _0x4563b8 = _0x5b64b5, _0x1b75d2 = Date[_0x4563b8(0x1c1)](); if (_0x1b75d2 - lastMouseMoveTime > minimumInteractionTime) { lastMouseMoveTime = _0x1b75d2; const _0x372713 = document[_0x4563b8(0x1bf)](_0x778575[_0x4563b8(0x1b1)], _0x778575[_0x4563b8(0x1ce)]); _0x372713 && _0x372713[_0x4563b8(0x1b6)]('li') && updateAttention(_0x372713['closest']('li')[_0x4563b8(0x1ba)](_0x4563b8(0x1ca)), _0x4563b8(0x1c4)); } }), document['addEventListener']('click', function(_0x109f1e) { const _0x11dfe4 = _0x5b64b5, _0x5a22f8 = _0x109f1e[_0x11dfe4(0x1d0)][_0x11dfe4(0x1b6)]('li'); _0x5a22f8 && updateAttention(_0x5a22f8[_0x11dfe4(0x1ba)](_0x11dfe4(0x1ca)), 'click'); }), document[_0x5b64b5(0x1d6)]('.answer\x20ol\x20li')[_0x5b64b5(0x1c5)](_0x4ab180 => { const _0x19de7a = _0x5b64b5; _0x4ab180[_0x19de7a(0x1b3)](_0x19de7a(0x1d8), function() { const _0x7c84b7 = _0x19de7a; updateAttention(_0x4ab180[_0x7c84b7(0x1ba)](_0x7c84b7(0x1ca)), 'active'); }); }), setInterval(() => { const _0xb92ec9 = _0x5b64b5; console[_0xb92ec9(0x1b4)]('Attention\x20Data:', { ...attentionData }); }, 0x1388); function updateChart() { const _0x36e88c = _0x5b64b5, _0x1e4f8e = Object[_0x36e88c(0x1c7)](attentionData)[_0x36e88c(0x1af)]((_0x46dd80, _0x557a17) => _0x46dd80 + _0x557a17, 0x0); if (_0x1e4f8e > 0x0) for (const _0xa19b5d in attentionData) { const _0x17ea81 = (attentionData[_0xa19b5d] / _0x1e4f8e * 0x64)[_0x36e88c(0x1b2)](0x2), _0x3dff3a = document[_0x36e88c(0x1b8)](_0x36e88c(0x1c3) + _0xa19b5d); _0x3dff3a[_0x36e88c(0x1c0)][_0x36e88c(0x1cc)] = _0x17ea81 + '%', _0x3dff3a[_0x36e88c(0x1b5)](_0x36e88c(0x1d2))[_0x36e88c(0x1d3)] = _0x17ea81 + _0x36e88c(0x1bd) + (0x5 * _0x17ea81 / 0x64)[_0x36e88c(0x1b2)](0x2); } } function _0x24a3() { const _0x42acdb = ['now', '4zoLDnc', 'bar', 'passive', 'forEach', 'mousemove', 'values', 'height', '159750YIuHPS', 'data-source', '969804nrOpFu', 'width', '.answer\x20ol\x20li', 'clientY', '8DlPFEu', 'target', 'documentElement', '.percentage', 'textContent', '64010ZlAUrM', 'max', 'querySelectorAll', 'clientHeight', 'focus', 'innerHeight', 'min', '36GMWvkY', 'top', 'bottom', 'active', 'reduce', 'getBoundingClientRect', 'clientX', 'toFixed', 'addEventListener', 'log', 'querySelector', 'closest', '2167647uHbAJs', 'getElementById', '4499615sikwTu', 'getAttribute', '4713804oIthwj', 'click', '%\x20-\x20$', '1070727jFBwBT', 'elementFromPoint', 'style']; _0x24a3 = function() { return _0x42acdb; }; return _0x24a3(); }
+  </script>
 </head>
 
 <body>
-  <div class="container">
-    <h1>how do roth iras work</h1>
-    <div class="sources">
-      <div class="source-item">
-        wsj.com
+  <div id="super-container">
+    <div class="container">
+      <div>
+        <h1>how do roth iras work</h1>
+        <h3>Sources:</h3>
+        <div class="sources">
+
+          <div class="source-item">
+            wsj.com
+          </div>
+          <div class="source-item">
+            investopedia.com
+          </div>
+          <div class="source-item">
+            nerdwallet.com
+          </div>
+          <div class="source-item">
+            fidelity.com
+          </div>
+        </div>
       </div>
-      <div class="source-item">
-        investopedia.com
-      </div>
-      <div class="source-item">
-        nerdwallet.com
-      </div>
-      <div class="source-item">
-        fidelity.com
+      <div class="answer">
+        <p>Roth IRAs are tax-advantaged retirement savings accounts that work in the following ways:</p>
+        <ol>
+          <li data-source="1 2">Contributions are made with after-tax dollars, meaning you pay taxes on the money before
+            depositing it into the account
+            <span>1</span><span>2</span>.
+          </li>
+          <li data-source="4">The funds in a Roth IRA can be invested in various securities such as stocks, bonds,
+            mutual
+            funds, ETFs, and more
+            <span>4</span>. These investments grow tax-free within the account.
+          </li>
+          <li data-source="1 2 4">Qualified withdrawals in retirement are completely tax-free, including both
+            contributions and earnings. To be considered qualified, withdrawals must be made after age 59½ and the
+            account
+            must have been open for at least five years
+            <span>1</span><span>2</span><span>4</span>.
+          </li>
+          <li data-source="3 4">You can withdraw your original contributions at any time without penalties or taxes,
+            since
+            you've already paid taxes on that money
+            <span>3</span><span>4</span>.
+          </li>
+          <li data-source="2 3">There are income limits for Roth IRA eligibility. For 2024, single filers with modified
+            adjusted gross income (MAGI) below $161,000 and married couples filing jointly with MAGI below $240,000 can
+            contribute the full amount
+            <span>2</span><span>3</span>.
+          </li>
+          <li data-source="3 4">The contribution limit for 2024 is $7,000 for those under 50 and $8,000 for those 50 and
+            older
+            <span>3</span><span>4</span>.
+          </li>
+          <li data-source="1 2">Unlike traditional IRAs, Roth IRAs have no required minimum distributions (RMDs) during
+            the account holder's lifetime, allowing the money to grow tax-free for longer
+            <span>1</span><span>2</span>.
+          </li>
+          <li data-source="3 4">Early withdrawals of earnings (before age 59½) may be subject to taxes and a 10%
+            penalty,
+            with some exceptions for specific circumstances like first-time home purchases or qualified education
+            expenses
+            <span>3</span><span>4</span>.
+          </li>
+          <li data-source="1 2">Roth IRAs can be opened through various financial institutions, including banks,
+            brokerage
+            firms, and robo-advisors
+            <span>1</span><span>2</span>.
+          </li>
+        </ol>
       </div>
     </div>
-    <div class="answer">
-      <p>Roth IRAs are tax-advantaged retirement savings accounts that work in the following ways:</p>
-      <ol>
-        <li data-source="1 2">Contributions are made with after-tax dollars, meaning you pay taxes on the money before
-          depositing it into the account
-          <span>1</span><span>2</span>.
-        </li>
-        <li data-source="4">The funds in a Roth IRA can be invested in various securities such as stocks, bonds, mutual
-          funds, ETFs, and more
-          <span>4</span>. These investments grow tax-free within the account.
-        </li>
-        <li data-source="1 2 4">Qualified withdrawals in retirement are completely tax-free, including both
-          contributions and earnings. To be considered qualified, withdrawals must be made after age 59½ and the account
-          must have been open for at least five years
-          <span>1</span><span>2</span><span>4</span>.
-        </li>
-        <li data-source="3 4">You can withdraw your original contributions at any time without penalties or taxes, since
-          you've already paid taxes on that money
-          <span>3</span><span>4</span>.
-        </li>
-        <li data-source="2 3">There are income limits for Roth IRA eligibility. For 2024, single filers with modified
-          adjusted gross income (MAGI) below $161,000 and married couples filing jointly with MAGI below $240,000 can
-          contribute the full amount
-          <span>2</span><span>3</span>.
-        </li>
-        <li data-source="3 4">The contribution limit for 2024 is $7,000 for those under 50 and $8,000 for those 50 and
-          older
-          <span>3</span><span>4</span>.
-        </li>
-        <li data-source="1 2">Unlike traditional IRAs, Roth IRAs have no required minimum distributions (RMDs) during
-          the account holder's lifetime, allowing the money to grow tax-free for longer
-          <span>1</span><span>2</span>.
-        </li>
-        <li data-source="3 4">Early withdrawals of earnings (before age 59½) may be subject to taxes and a 10% penalty,
-          with some exceptions for specific circumstances like first-time home purchases or qualified education expenses
-          <span>3</span><span>4</span>.
-        </li>
-        <li data-source="1 2">Roth IRAs can be opened through various financial institutions, including banks, brokerage
-          firms, and robo-advisors
-          <span>1</span><span>2</span>.
-        </li>
-      </ol>
+    <div class="sidebar">
+      <div>Example ad slot</div>
+
+      <div>$5.00 CPM</div>
     </div>
   </div>
 
